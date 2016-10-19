@@ -1,0 +1,513 @@
+body {
+    background-color: #e8eff6;
+    /*position: relative;*/
+    /*z-index: 1;*/
+}
+.reg-box {
+    width: 1000px;
+    margin: 0 auto;
+    /*position: relative;*/
+    /*z-index: 1;*/
+}
+.head {
+    height: 50px;
+    padding: 25px 0;
+}
+.head .reg-logo {
+    display: inline-block;
+    height: 48px;
+    width: 113px;
+    background: url(../images/myelong_login.png) no-repeat 0 0;
+    text-indent: -5000px;
+    line-height: 48px;
+    vertical-align: middle;
+    /*border-right:1px solid #ccc;*/
+    /*padding-right: 20px;*/
+    /*position: relative;*/
+    /*z-index: 1;*/
+}
+.head span {
+    display: inline-block;
+    height: 48px;
+    margin-left: 23px;
+    padding-left: 13px;
+    line-height: 48px;
+    border-left: 1px solid #CCC;
+    color: #555;
+    font: 24px/44px Microsoft YaHei;
+    vertical-align: middle;
+}
+.reg-containner {
+    width: 1000px;
+    margin: 0 auto;
+    background-color: #fff;
+    position: relative;
+    /*overflow: hidden;*/
+}
+.reg-containner .login-banner img {
+    width: 620px;
+    height: 350px;
+}
+.reg-containner .login-banner {
+    display: block;
+    height: 350px;
+    width: 620px;
+    /*float: left;*/
+}
+.right-banner {
+    width: 285px;
+    height: 322px;
+    padding: 24px 45px 0;
+    /*background-color: pink;*/
+}
+.listBox .change {
+    width: 100%;
+    height: 12px;
+    font: 12px/1 Arial;
+    color: #555;
+    margin-bottom: 20px;
+    position: relative;
+}
+.gat {
+    padding: 12px;
+    padding-right: 20px;
+    position: absolute;
+    top: -48px;
+    right: -45px;
+    background-color: #fff;
+    box-shadow: 1px 1px 3px grey;
+    z-index: 11;
+}
+.gat .close {
+    font-size: 22px;
+    display: block;
+    height: 12px;
+    width: 12px;
+    line-height: 12px;
+    text-align: center;
+    /*background-color: #fff;*/
+    position: absolute;
+    right: 2px;
+    top: 2px;
+    color: grey;
+}
+.gat .arrow {
+    diplay: block;
+    position: absolute;
+    left: 30px;
+    bottom: -10px;
+    width: 18px;
+    height: 21px;
+    color: #fff;
+    font-size: 22px;
+    font-weight: bold;
+    font-family: SimSun,Hiragino Sans GB;
+    /*font-style: normal;*/
+    line-height: 21px;
+    z-index: 1;
+    text-align: center;
+    text-shadow: 0px 0.5px 0px grey;
+
+}
+.listBox .change input {
+    line-height: 12px;
+    vertical-align: middle;
+    margin-right: 3px;
+}
+.listBox .change label {
+    margin-right: 42px;
+    cursor: pointer;
+}
+.inputBox {
+    /*height: 35px;*/
+    width: 285px;
+    margin-top: 5px;
+    position: relative;
+}
+.inputBox input {
+    /*border-width: 1px;*/
+    /*border-radius: 10px;*/
+    font-size: 14px;
+    color: #999;
+}
+.inputBox .userName {
+    width: 285px;
+    height: 35px;
+    box-sizing: border-box;
+    padding-left: 3px;
+    margin-bottom: 20px;
+}
+.inputBox .userspan {
+    display: inline-block;
+    width: 28px;
+    height: 30px;
+    position: absolute;
+    right: 0;
+    top: 3px;
+    background: url(../images/myelong_login.png) no-repeat -110px -275px;
+}
+.inputBox .passw {
+    top: 58px;
+    background: url(../images/myelong_login.png) no-repeat -136px -273px;
+}
+.inputBox .checkcode {
+    width: 145px;
+    height: 35px;
+    box-sizing: border-box;
+    padding-left: 5px;
+    margin-bottom: 20px;
+    border: 1px solid red;
+    margin-right: 10px;
+    /*line-height: 35px;*/
+    /*vertical-align: middle;*/
+}
+.inputBox .checkpic {
+    height: 32px;
+    width: 65px;
+    line-height: 35px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+.inputBox .checkpic {
+    line-height: 35px;
+
+}
+.free-login {
+    width: 100%;
+    margin-bottom: 20px;
+}
+.free-login #free-log {
+    vertical-align: middle;
+}
+.free-login label {
+    cursor: pointer;
+}
+.right-banner .listBox .login-button {
+    display: block;
+    width: 100%;
+    height: 40px;
+    margin-bottom: 20px;
+    text-align: center;
+    font: 18px Microsoft YaHei;
+    line-height: 40px;
+    color: #fff;
+    background-color: #f80;
+    border-radius: 2px;
+}
+.right-banner .listBox .login-button:hover {
+    background-color: #e60;
+}
+.other-login {
+    width: 100%;
+    height: 20px;
+}
+.other-login a {
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    margin-right: 18px;
+    /*background-color: red;*/
+    line-height: 20px;
+    vertical-align: middle;
+}
+.other-login .qq {
+    background: url(../images/myelong_login.png) no-repeat 0 -214px;
+}
+.other-login .qq:hover {
+    background: url(../images/myelong_login.png) no-repeat 0 -243px;
+}
+.other-login .sina {
+    background: url(../images/myelong_login.png) no-repeat -40px -214px;
+}
+.other-login .sina:hover {
+    background: url(../images/myelong_login.png) no-repeat -40px -243px;
+}
+.other-login .ali {
+    background: url(../images/myelong_login.png) no-repeat -80px -214px;
+}
+.other-login .ali:hover {
+    background: url(../images/myelong_login.png) no-repeat -80px -243px;
+}
+.other-login .ren {
+    background: url(../images/myelong_login.png) no-repeat -120px -214px;
+}
+.other-login .ren:hover {
+    background: url(../images/myelong_login.png) no-repeat -120px -243px;
+}
+.dpn {
+    display: none;
+}
+.phone-login {
+    width: 100%;
+}
+.phone-num-d {
+    margin-bottom: 20px;
+}
+.phone-num-d .mainland-d {
+    width: 105px;
+    height: 33px;
+    border: 1px solid #aaa;
+    border-radius: 2px;
+    padding-left: 5px;
+    margin-right: 8px;
+    line-height: 33px;
+    background: url(../images/midify_tel.png) no-repeat 75px 0;
+    position: relative;
+    /*text-align: center;*/
+}
+.phone-num-d .mainland-d .tanchu {
+    width: 110px;
+    background-color: #fff;
+    border: 1px solid #aaa;
+    border-top: 0 none;
+    line-height: 30px;
+    position: absolute;
+    left: -1px;
+    top: 34px;
+    display: none;
+}
+.phone-num-d .mainland-d .tanchu p {
+    padding: 0 5px;
+}
+.phone-num-d .mainland-d .tanchu p:hover {
+    background-color: lightgrey;
+}
+.phone-num-d .mainland-d .tanchu a {
+    color: #131313;
+}
+.phone-num-d .mainland-d:hover {
+    background: url(../images/midify_tel.png) no-repeat 75px -42px;
+}
+.phone-num-d input {
+    width: 165px;
+    height: 35px;
+    box-sizing: border-box;
+    float: left;
+    padding-left: 5px;
+    border: 1px solid #aaa;
+    border-radius: 2px;
+    color: #999;
+}
+.dong input {
+    width: 166px;
+    height: 35px;
+    box-sizing: border-box;
+    padding-left: 5px;
+    border: 1px solid #aaa;
+    border-radius: 2px;
+    color: #999;
+}
+.dong .getd {
+    height: 35px;
+    width: 110px;
+    background-color: #37D;
+    border-radius: 5px;
+    color: #fff;
+    line-height: 35px;
+    text-align: center;
+    cursor: pointer;
+}
+.remember-me input {
+    line-height: 35;
+    vertical-align: middle;
+    padding-right: 3px;
+}
+.login-bar1 {
+    display: block;
+    width: 100%;
+    height: 40px;
+    color: #fff;
+    font: 18px Microsoft YaHei;
+    text-align: center;
+    line-height: 40px; /*color: #fff;*/
+    background-color: #f80;
+    border-radius: 2px;
+    /*cursor: pointer;*/
+}
+.login-bar1:hover {
+    background-color: #e60;
+    color: #fff;
+}
+.erwei-btn {
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: url(../images/myelong_login.png) no-repeat -284px -298px;
+    cursor: pointer;
+}
+/*二维码模块开始*/
+.erwei {
+    width: 285px;
+    height: 322px;
+    padding: 24px 45px 0;
+    position: relative;
+    /*background-color: pink;*/
+}
+.erwei h5 {
+    width: 200px;
+    margin: 0 auto;
+    margin-top: 30px;
+    color: #37d;
+    font: 18px/32px Microsoft Yahei;
+}
+.erwei .pic {
+    height: 200px;
+    width: 200px;
+    margin: 0 auto;
+}
+.erwei .pic img {
+    height: 186px;
+    width: 186px;
+    padding: 7px;
+}
+/*二维码上面的动图开始*/
+
+.erwei .active-pic {
+    position: absolute;
+    top: 85px;
+    left: 0;
+    height: 210px;
+    width: 265px;
+    background: url(../images/login_bgg.png) no-repeat -1px -210px;
+    display: none;
+    /*opacity: 0;*/
+}
+.erwei .active-pic .circle {
+    height: 100px;
+    width: 100px;
+    background-color: green;
+    background: url(../images/show_anima.png) no-repeat 0 0;
+    position: absolute;
+    top: 0;
+    left: 154px;
+    display: none;
+    /*opacity: 0;*/
+}
+/*二维码上面的动图结束*/
+.erwei .help {
+    width: 50px;
+    height: 16px;
+    line-height: 16px;
+    margin: 0 auto;
+    margin-top: 10px;
+    padding: 3px 12px;
+    border-radius: 16px;
+    border: 1px solid #49f;
+
+}
+.erwei .help:hover {
+    background-color: #49f;
+}
+.erwei .help a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.erwei .help:hover a {
+    color: #fff;
+}
+.erwei .computer {
+    height: 50px;
+    width: 50px;
+    background: url(../images/myelong_login.png) no-repeat -284px -348px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+}
+/*二维码模块结束*/
+/*立即注册开始*/
+.atonce {
+    text-align: right;
+    width: 1000px;
+    margin: 0 auto;
+    position: relative;
+    margin-top: 20px;
+}
+.atonce:hover a {
+    color: #FF6500;
+}
+.atonce:hover span {
+    background: url(../images/myelong_login.png) no-repeat 0 -445px;
+}
+.atonce a {
+    color: #3365CB;
+    line-height: 15px;
+}
+.atonce span {
+    display: inline-block;
+    height: 15px;
+    width: 15px;
+    background: url(../images/myelong_login.png) no-repeat 0 -430px;
+    /*background-color: red;*/
+    line-height: 15px;
+    vertical-align: middle;
+    margin: 0 5px;
+}
+/*立即注册结束*/
+.login-footer {
+    padding: 50px 0 30px 0;
+    text-align: center;
+}
+.login-footer ul li {
+    display: inline-block;
+    height: 30px;
+}
+.login-footer ul li a {
+    line-height: 30px;
+    color: #555;
+}
+.login-footer ul li:hover a {
+    color: #FF6500;
+}
+.login-footer ul li span {
+    display: inline-block;
+    width: 20px;
+    height: 22px;
+    margin: 0 5px 0 30px;
+    line-height: 30px;
+    vertical-align: middle;
+    /*background-color: red;*/
+}
+.login-footer ul li:nth-child(1) span {
+    background: url(../images/myelong_login.png) no-repeat -1px -275px;
+}
+.login-footer ul li:nth-child(2) span {
+    background: url(../images/myelong_login.png) no-repeat -25px -275px;
+}
+.login-footer ul li:nth-child(3) span {
+    background: url(../images/myelong_login.png) no-repeat -50px -275px;
+}
+.login-footer ul li:nth-child(4) span {
+    background: url(../images/myelong_login.png) no-repeat -77px -275px;
+}
+.login-footer ul li:nth-child(1):hover span {
+    background: url(../images/myelong_login.png) no-repeat -1px -303px;
+}
+.login-footer ul li:nth-child(2):hover span {
+    background: url(../images/myelong_login.png) no-repeat -25px -303px;
+}
+.login-footer ul li:nth-child(3):hover span {
+    background: url(../images/myelong_login.png) no-repeat -50px -303px;
+}
+.login-footer ul li:nth-child(4):hover span {
+    background: url(../images/myelong_login.png) no-repeat -77px -303px;
+}
+.about-us {
+    height: 30px;
+    line-height: 30px;
+}
+.about-us a {
+    display: inline-block;
+    margin: 0 5px;
+    color: #555;
+}
+.about-us a:hover {
+    color: #FF6500;
+}
+.about-us span {
+    display: inline-block;
+    margin-left: 20px;
+}

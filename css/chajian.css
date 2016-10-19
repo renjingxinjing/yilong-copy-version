@@ -1,0 +1,104 @@
+.accordion {
+  height: 300px;
+  overflow: hidden;
+  position: relative;
+}
+ 
+.accordion:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: #fff;
+}
+ 
+.accordion._create:after { display: none; }
+ 
+.accordion__ul {
+  display: block;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 9999px;
+  height: 300px;
+  overflow: hidden;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+ 
+.accordion__li {
+  display: block;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  height: 260px;
+  float: left;
+  overflow: hidden;
+  /* box-shadow: 0 0 10px 0 #000; */
+  transition: all 0.3s ease-out;
+  /* border: 1px solid red;
+  box-sizing: border-box; */
+  position: relative;
+}
+.accordion__li:hover .word {
+  display: none;
+}
+.accordion__li .word {
+  // width: 20px;
+  height: auto;
+  position: absolute;
+  text-align: center;
+  // background-color: red;
+  top: 0;
+  left: 50%;
+  margin-left: -10px;
+
+}
+.accordion__li:nth-child(1){
+  // background: url(../1.jpg) no-repeat center center;
+  background: url(../images/20150422_ifold1.jpg) no-repeat center
+}
+.accordion__li:nth-child(2){
+  // background: url(../2.jpg) no-repeat center center;
+  background: url(../images/20150120_ifold2.jpg) no-repeat center
+}
+.accordion__li:nth-child(3){
+  // background: url(../3.jpg) no-repeat center center;
+  background: url(../images/20150120_ifold3.jpg) no-repeat center
+}
+.accordion__li:nth-child(4){
+  // background: url(../4.jpg) no-repeat center center;
+  background: url(../images/20150120_ifold4.jpg) no-repeat center
+}
+.accordion__li:nth-child(5){
+  // background: url(../5.jpg) no-repeat center center;
+  background: url(../images/20150120_ifold5.jpg) no-repeat center
+}
+.accordion__li:nth-child(6){
+  // background: url(../6.jpg) no-repeat center center;
+  background: url(../images/20150120_ifold6.jpg) no-repeat center
+}
+.accordion__li:nth-child(7){
+  // background: url(../7.jpg) no-repeat center center;
+  background: url(../images/20150120_ifold7.jpg) no-repeat center
+}
+// .accordion__li:nth-child(8){
+//   background: url(../8.jpg) no-repeat center center;
+// }
+ 
+.accordion__img {
+  display: block;
+  cursor: pointer;
+  width: 400px;
+  height: 260px;
+}
+// .wrapper {
+//   height: 300px;
+//   width: 1200px;
+//   margin: 0 auto;
+//   overflow: hidden;
+// }

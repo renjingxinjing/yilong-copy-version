@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>山寨艺龙旅游网-登录页</title>
+    <meta name = "kewords" content="酒店,机票,火车票,汽车票,旅行,旅游,攻略"/>
+    <meta name = "discription" content="艺龙旅行网是中国领先的在线旅行服务提供商,致力于为消费者提供最好的酒店,机票,旅行度假产品和高效率的预订服务.在线预订酒店返现高达20%.24小时免费预订电话 4009-333-333."/>
+    <link rel="chortcut icon" href="favicon.ico"/>
+    <link rel="stylesheet" href="css/base.css"/>
+    <link rel="stylesheet" href="css/login.css"/>
+    <script src="plug-in/jquery-1.12.4.js"></script>
+    <script src="js/login.js"></script>
+</head>
+<body>
+<div class="head reg-box">
+    <a href="../index.html" class="reg-logo">艺龙</a><span>会员登录</span>
+</div>
+<div class="reg-containner clearfix">
+    <a href="#" class="login-banner fl"><img src="images/login_banner.jpg" alt=""/></a>
+    <form action="login.php" method="post" id="login-start">
+        <div class="right-banner fr">
+            <div class="listBox">
+                <!--表单最上面的两个切换标签开始-->
+                <div class="change">
+                    <input type="radio" name="change" checked="checked" id="normal"/><label for="normal">普通登录</label>
+                    <input type="radio" name="change" id="active"/><label for="active">手机动态密码登录</label>
+                    <div class="gat">
+                        港澳台手机用户请使用“手机动态密码登录”
+                        <span class="arrow">◆</span>
+                        <a href="#" class="close">×</a>
+                    </div>
+                </div>
+                <!--表单最上面的两个切换标签结束-->
+                <!--普通登录部分开始-->
+                <div class="normal-login">
+                <!--<div class="normal-login">-->
+                    <div class="inputBox">
+                        <input type="text" value="用户名/卡号/手机号/邮箱" class="userName" id="username" name="username"/>
+                        <span class="userspan"></span>
+                        <input type="text" value="密码" class="userName" id="password" name="password"/>
+                        <span class="userspan passw"></span>
+                        <input type="text" class="checkcode" value="验证码"/><img src="images/Validate.jpg" alt="" class="checkpic"/><a href="#" class="changePic">换一张</a>
+                    </div>
+                    <div class="free-login">
+                        <input type="checkbox" id="free-log" checked="checked"/>
+                        <label for="free-log">两个月内免登陆</label>
+                        <a href="#" class="fr">忘记密码</a>
+                    </div>
+                    <a href="#" class="login-button">登录</a>
+                    <div class="other-login">
+                        <span class="mr10">使用其他账号登录：</span>
+                        <a href="#" class="qq"></a>
+                        <a href="#" class="sina"></a>
+                        <a href="#" class="ali"></a>
+                        <a href="#" class="ren"></a>
+                    </div>
+                </div>
+                <!--普通登录部分结束-->
+                <!--手机动态密码登录模块开始-->
+                <div class="phone-login clearfix dpn">
+                    <div class="phone-num-d clearfix">
+                        <div class="mainland-d fl clearfix">
+                            <span>中国大陆+86</span>
+                            <div class="tanchu">
+                                <p><a href="#">中国大陆+86</a></p>
+
+                                <p><a href="#">中国香港+852</a></p>
+
+                                <p><a href="#">中国澳门+853</a></p>
+
+                                <p><a href="#">中国台湾+886</a></p>
+                            </div>
+                        </div>
+
+                        <input type="text" value="请输入手机号" id="inputph"/>
+                    </div>
+                    <div class="dong mb20">
+                        <input type="text" value="请输入动态密码" id="inputd"/>
+
+                        <div class="getd fr">
+                            获取动态密码
+                        </div>
+                    </div>
+                    <div class="remember-me mb20">
+                        <input type="checkbox" name="checkbox" checked="checked" id="remember-me"/>
+                        <label for="remember-me">记住我</label>
+                    </div>
+                    <a href="#" class="login-bar1 mb20">登录</a>
+                    <div class="other-login">
+                        <span class="mr10">使用其他账号登录：</span>
+                        <a href="#" class="qq"></a>
+                        <a href="#" class="sina"></a>
+                        <a href="#" class="ali"></a>
+                        <a href="#" class="ren"></a>
+                    </div>
+                </div>
+                <!--手机动态密码登录模块结束-->
+                <!--表单右上角二维码按钮-->
+                <div class="erwei-btn">
+
+                </div>
+            </div>
+        </div>
+    </form>
+    <!--二维码开始-->
+    <div class="erwei fr dpn">
+        <h5>请使用艺龙APP扫描登录</h5>
+        <div class="pic">
+            <img src="images/QrCode.jpg" alt=""/>
+        </div>
+        <div class="active-pic">
+            <div class="circle"></div>
+        </div>
+        <div class="help">
+            <a href="#">使用帮助</a>
+        </div>
+        <!--二维码右上角按钮-->
+        <a href="#" class="computer"></a>
+    </div>
+    <!--二维码结束-->
+
+</div>
+<div class="atonce"><a href="#">立即注册</a><span></span></div>
+<div class="login-footer">
+    <ul>
+        <li><span></span><a href="#">iPhone / iPad</a></li>
+        <li><span></span><a href="#">Android</a></li>
+        <li><span></span><a href="#">Windows</a></li>
+        <li><span></span><a href="#">其他手机端</a></li>
+    </ul>
+    <p class="about-us">
+        <a href="#">关于艺龙</a>|<a href="#">酒店加盟</a>|<a href="#">代理合作</a>|<a href="#">广告服务</a>|<a href="#">联系我们</a><span>©1999 - 2014 eLong, Inc or its affiliates. All Rights Reserved.</span>
+    </p>
+</div>
+</body>
+</html>

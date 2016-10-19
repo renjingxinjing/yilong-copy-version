@@ -1,0 +1,802 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>山寨艺龙旅游网</title>
+    <meta name="kewords" content="酒店,机票,火车票,汽车票,旅行,旅游,攻略"/>
+    <meta name="discription"
+          content="艺龙旅行网是中国领先的在线旅行服务提供商，纳斯达克上市公司(NASDAQ: LONG)。提供全球57万家酒店预订服务，2015年艺龙用户入住了4000万以上的间夜。低价有房保障，到店无房赔付。包含星级酒店、宾馆、快捷酒店、家庭旅馆、公寓、情侣酒店、精品酒店、青年旅舍、主题酒店、客栈、农家乐、温泉酒店。同时提供机票查询、机票预订、火车时刻表查询、高铁火车票预订、汽车票查询和预订等服务。更有丰富的旅游目的地攻略和游记。"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <!--自定义样式开始-->
+    <!--公共样式-->
+    <link rel="stylesheet" href="css/base.css"/>
+    <link rel="stylesheet" href="css/index.css"/>
+    <!--自定义样式结束-->
+    <!--风琴插件样式开始-->
+    <link rel="stylesheet" href="css/chajian.css"/>
+    <!--风琴插件样式结束-->
+
+    <!--jQuery库引入开始-->
+    <script type="text/javascript" src="jsku/jquery-1.12.4.js"></script>
+    <!--jQuery库引入结束-->
+    <!--自定义业务逻辑开始-->
+    <script src="js/index.js"></script>
+    <!--自定义业务逻辑结束-->
+    <!-- 插件依赖脚本开始 -->
+    <!--<script src="jsku/jquery.min.js"></script>-->
+    <script src="js/limit.js"></script>
+    <script src="js/zA7n.js"></script>
+    <!-- 插件依赖脚本结束 -->
+    <!--风琴插件初始化开始* 必须 *-->
+    <script>
+        $(function () {
+            $('#demo').zA7n();
+        })
+    </script>
+    <!--风琴插件初始化开始-->
+    <!--字体图标依赖开始-->
+    <style>
+
+        @font-face {
+            font-family: 'ziti';
+            src: url('font/iconfont.eot'); /* IE9*/
+            src: url('font/iconfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('font/iconfont.woff') format('woff'), /* chrome、firefox */ url('font/iconfont.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/ url('font/iconfont.svg#iconfont') format('svg'); /* iOS 4.1- */
+        }
+
+        .fonts {
+            font-family: 'ziti';
+            font-size: 18px;
+            color: grey;
+            font-style: normal;
+        }
+
+    </style>
+    <!--字体图标依赖结束-->
+</head>
+<body>
+<!--顶部注册登录栏开始-->
+<div class="box topbar">
+    <a href="#" class="logo">艺龙旅游网</a>
+
+    <div class="fr topbar-r">
+        <ul class="fl">
+            <li><a href="#">积分商城</a></li>
+
+            <li><a href="#">礼品卡</a></li>
+
+            <li><a href="#">微信客服</a></li>
+
+            <li><a href="#">帮助中心</a></li>
+
+            <li class="last">
+                <a href="#">
+                    English
+                    <i></i>
+                </a>
+                <span>
+                    <a href="#">简体版</a>
+                    <a href="#">繁体版</a>
+                 </span>
+            </li>
+        </ul>
+        <a href="#" class="phone fl">
+            <em class="pht">手机版</em>
+            <em>专享五折起</em>
+            <i class="outer">
+                <i class="inner"></i>
+            </i>
+        </a>
+
+        <div class="service-phnum fl">
+            <em class="pt">7×24 客服电话</em>
+            <em class="pb">4009-333-333</em>
+            <i></i>
+
+            <div class="number">
+                <span></span>
+                <dl>
+                    <dd>
+                        <p>国内：4009-333-333</p>
+                    </dd>
+                    <dd>
+                        <p>香港：852-8131-8883</p>
+
+                        <p class="another">852-8131-8983</p>
+                    </dd>
+                    <dd>
+                        <p>台湾：886-2-7717-8123</p>
+                    </dd>
+                    <dd class="last">
+                        <p>海外：86-10-6432-9999</p>
+                    </dd>
+                </dl>
+
+            </div>
+        </div>
+    </div>
+</div>
+<!--顶部注册登录栏结束-->
+<!--顶部导航栏开始-->
+<div class="nav clearfix">
+    <div class="mainnav box clearfix">
+        <ul class="fl nav-bar">
+            <li><a href="#">首页</a></li>
+            <li><a href="#">国内酒店</a></li>
+            <li><a href="#">国际酒店</a><em class="one"></em></li>
+            <li><a href="#">短租公寓</a><em class="two"></em></li>
+            <li><a href="#">限时抢</a></li>
+            <li><a href="#">机票</a></li>
+            <li><a href="#">火车票</a></li>
+            <li><a href="#">汽车票</a><em class="three"></em></li>
+            <li><a href="#">用车</a><em class="four"></em></li>
+            <li><a href="#">旅游指南</a></li>
+        </ul>
+        <div class="mainlogin fr">
+            <a href="login-page/login.html">登录</a>&nbsp;|&nbsp;<a href="register-page/register.html">注册</a>
+
+            <div class="loginBox">
+                <div class="loginButton">
+                    <a href="login-page/login.html">登录</a>
+                </div>
+                <ul id="login-box">
+                    <li><i></i><span>酒店订单</span></li>
+                    <li><i></i><span>团购订单</span></li>
+                    <li><i></i><span>机票订单</span></li>
+                    <li><i></i><span>火车票定单</span></li>
+                    <li><i></i><span>现金账户</span></li>
+                    <li><i></i><span>汽车票订单</span></li>
+                    <li><i></i><span>酒店收藏</span></li>
+                    <li><i></i><span>我的点评</span></li>
+                    <li><i></i><span>个人设置</span></li>
+                </ul>
+            </div>
+        </div>
+        <ol class="slideBar">
+            <li class="current">1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+        </ol>
+        <!-- banner上的表格盒子开始 -->
+        <div class="itemsBox">
+            <div class="leftitem fl">
+                <a href="javascript:;" class="current"><i class="fonts">&#xe682;</i>酒店</a>
+                <a href="javascript:;"><i class="fonts">&#xe62d;</i>机票</a>
+                <a href="javascript:;"><i class="fonts">&#xe61e;</i>火车票</a>
+                <a href="javascript:;"><i class="fonts">&#xe675;</i>手机版</a>
+                <a href="javascript:;"><i class="fonts">&#xe61a;</i>婚纱</a>
+            </div>
+            <!-- 表格盒子右侧部分开始 -->
+            <div class="rightitem fr">
+                <!-- 酒店开始 -->
+                <div class="hotel-model">
+                    <!-- 酒店模块表头开始-->
+                    <div class="top">
+                        <a href="javascript:;" class="current">国内酒店<i></i></a>
+                        <a href="javascript:;">国际酒店<i></i></a>
+                    </div>
+                    <!-- 酒店模块表头结束-->
+                    <!-- 酒店模块开始 -->
+                    <!-- 酒店国内模块开始 -->
+                    <div class="hotel-input">
+                        <div class="containt clearfix inner-hotel">
+                            <dl>
+                                <dt>目的地</dt>
+                                <dd class="onedd">
+                                    <input type="text" value="北京"/>
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>入住</dt>
+                                <dd class="twodd">
+
+                                    <input type="text" value="2016-10-XX"/><em class="left"></em><span>退房</span><em
+                                        class="right"></em><input type="text" value="2016-10-XX"/>
+                                </dd>
+
+
+                            </dl>
+                            <dl>
+                                <dt>关键词</dt>
+                                <dd class="threedd">
+                                    <input type="text" value="请输入地标/商圈/景点"/>
+                                </dd>
+                            </dl>
+                            <div class="searchButton">
+                                <a href="#" class="searchBar"><i></i>搜索</a>
+                                <a href="#" class="mapSearch"><i></i>地图搜索</a>
+                            </div>
+                        </div>
+                        <!-- 酒店国内模块结束 -->
+                        <!-- 酒店国外模块开始 -->
+                        <div class="containt clearfix outer-hotel dpn">
+                            <dl>
+                                <dt>目的地</dt>
+                                <dd class="onedd">
+                                    <input type="text" value="首尔"/>
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>入住</dt>
+                                <dd class="twodd">
+                                    <input type="text" value="2016-10-XX"/><em class="left"></em><span>退房</span><em
+                                        class="right"></em><input type="text" value="2016-10-XX"/>
+                                </dd>
+
+                            </dl>
+                            <dl>
+                                <dt>关键词</dt>
+                                <dd class="threedd">
+                                    <input type="text" value="请输入地标/商圈/景点"/>
+                                </dd>
+                            </dl>
+                            <div class="searchButton">
+                                <a href="#" class="searchBar"><i></i>搜索</a>
+                                <!-- <a href="#" class="mapSearch"><i></i>地图搜索</a> -->
+                            </div>
+                        </div>
+                        <!-- 酒店国内模块结束 -->
+                    </div>
+                    <!-- 酒店模块结束 -->
+                </div>
+                <!-- 酒店结束  -->
+                <!-- 机票开始 -->
+                <div class="tickets-model dpn">
+                    <!-- 机票模块开始 -->
+                    <!-- 机票模块表头开始-->
+                    <div class="top">
+                        <a href="javascript:;" class="current">国内机票<i></i></a>
+                        <a href="javascript:;">国际机票<i></i></a>
+                    </div>
+                    <!-- 机票模块表头结束-->
+                    <!-- 机票详情开始 -->
+                    <div class="hotel-input">
+                        <!--机票国内模块开始-->
+                        <div class="containt clearfix inner-tickets">
+                            <!-- <dl>
+                                <dt>目的地</dt>
+                                <dd class="onedd">
+                                    <input type="text" value="北京"/>
+                                </dd>
+                            </dl> -->
+                            <div class="journey-type">
+                                <span>航程类型</span><input type="radio" name="journey-type-inner" id="dc-inner"checked=checked><label for="dc-inner" class="dc">单程</label><input type="radio" name="journey-type-inner" id="wf-inner"><label for="wf-inner">往返</label>
+                            </div>
+                            <dl>
+                                <dt>往返城市</dt>
+                                <dd class="twodd">
+                                    <input type="text" value="北京"/><!--<em class="left"></em>--><i></i><!--<em
+                                        class="right"></em>--><input type="text" value="上海"/>
+                                </dd>
+
+                            </dl>
+                            <dl>
+                                <dt>去程</dt>
+                                <dd class="twodd">
+                                    <input type="text" value="2016-10-XX"/><em class="left"></em><span>返程</span><em
+                                        class="right"></em><input type="text" value="yyyy-mm-dd"/>
+                                </dd>
+
+                            </dl>
+                            <!-- <dl>
+                                <dt>关键词</dt>
+                                <dd class="threedd">
+                                    <input type="text" value="请输入地标/商圈/景点"/>
+                                </dd>
+                            </dl> -->
+                            <div class="searchButton">
+                                <a href="#" class="searchBar"><i></i>搜索</a>
+                                <!--  <a href="#" class="mapSearch"><i></i>地图搜索</a> -->
+                            </div>
+                        </div>
+                        <!-- 机票店国内模块结束 -->
+                        <!-- 机票国外模块开始 -->
+                        <div class="containt clearfix outer-tickets dpn">
+                            <!-- <dl>
+                                <dt>目的地</dt>
+                                <dd class="onedd">
+                                    <input type="text" value="北京"/>
+                                </dd>
+                            </dl> -->
+                            <div class="journey-type">
+                                <span>航程类型</span><input type="radio" name="journey-type-outer" id="dc-outer"><label
+                                    for="dc-outer" class="dc">单程</label><input type="radio" name="journey-type-outer"
+                                                                               id="wf-outer" checked=checked><label
+                                    for="wf-outer">往返</label>
+                            </div>
+                            <dl>
+                                <dt>往返城市</dt>
+                                <dd class="twodd">
+                                    <input type="text" value="北京"/><i></i><input type="text" value="香港"/>
+                                </dd>
+
+                            </dl>
+                            <dl>
+                                <dt>去程</dt>
+                                <dd class="twodd">
+                                    <input type="text" value="2016-10-XX"/><em class="left"></em><span>返程</span><em
+                                        class="right"></em><input type="text" value="2016-10-XX"/>
+                                </dd>
+
+                            </dl>
+                            <!-- <dl>
+                                <dt>关键词</dt>
+                                <dd class="threedd">
+                                    <input type="text" value="请输入地标/商圈/景点"/>
+                                </dd>
+                            </dl> -->
+                            <div class="searchButton">
+                                <a href="#" class="searchBar"><i></i>搜索</a>
+                                <!--  <a href="#" class="mapSearch"><i></i>地图搜索</a> -->
+                            </div>
+                        </div>
+                        <!--机票国外模块结束-->
+                        <!-- 机票详情模块结束 -->
+                    </div>
+                    <!-- 机票模块结束 -->
+                </div>
+                <!-- 机票结束 -->
+                <!--火车票开始-->
+                <div class="railway dpn">
+                    中华人民共和国万岁！
+                    <div class="text-guoqing"></div>
+                </div>
+                <!--火车票结束-->
+                <!--手机版开始-->
+                <div class="phone-ban dpn">
+                    <div class="siyuan-slide">
+                        <ul>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </div>
+                    <div class="text-siyuan"></div>
+                </div>
+                <!--手机版结束-->
+                <!--婚纱开始-->
+                <!--手机版开始-->
+                <div class="phone-ban dpn wedding">
+                    <div class="siyuan-slide">
+                        <ul>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </div>
+                    <div class="text-siyuan"></div>
+                </div>
+                <!--手机版结束-->
+                <!--婚纱结束-->
+            </div>
+            <!-- 表格盒子右侧部分结束 -->
+        </div>
+        <!-- banner上的表格盒子结束 -->
+    </div>
+</div>
+<!--顶部导航栏结束-->
+<!--主轮播图开始-->
+<div class="mainslide">
+    <div class="slide clearfix" id="slide">
+        <ul class="clearfix slide-items">
+            <li class="dpb"><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+        </ul>
+    </div>
+</div>
+<!--主轮播图结束-->
+<!--提示登录开始-->
+<div class="loginti box">
+    <div class="logintip">
+        <i></i><a href="login-page/login.html">登录</a>展示你的个性化内容
+    </div>
+</div>
+<!--提示登录结束-->
+<!--手风琴开始-->
+<!-- <div class="pianowrapper box">
+    <div class="piano">
+        <ul class="box" id="piano">
+            <li><h4>园林酒店</h4><a href="#"></a></li>
+            <li><h4>情侣酒店</h4><a href="#"></a></li>
+            <li><h4>设计师酒店</h4><a href="#"></a></li>
+            <li><h4>青年旅社</h4><a href="#"></a></li>
+            <li><h4>特色客栈</h4><a href="#"></a></li>
+            <li><h4>海岛酒店</h4><a href="#"></a></li>
+            <li class="last"><h4>海外温泉</h4><a href="#"></a></li>
+        </ul>
+    </div>
+</div> -->
+<!-- 插件结构引入开始 -->
+<div class="wrapper pianowrapper box">
+    <div class="accordion" id="demo">
+        <ul class="accordion__ul">
+            <li class="accordion__li">
+                <span class="accordion__img"></span>
+                <h4 class="word">园林酒店</h4>
+                <!-- <img class="accordion__img" src="1.jpg" alt="Image 1"> -->
+            </li>
+            <li class="accordion__li">
+                <span class="accordion__img"></span>
+                <h4 class="word">情侣酒店</h4>
+                <!-- <img class="accordion__img" src="2.jpg" alt="Image 2"> -->
+            </li>
+            <li class="accordion__li">
+                <span class="accordion__img"></span>
+                <h4 class="word">设计师酒店</h4>
+                <!-- <img class="accordion__img" src="3.jpg" alt="Image 3"> -->
+            </li>
+            <li class="accordion__li">
+                <span class="accordion__img"></span>
+                <h4 class="word">青年旅社</h4>
+                <!-- <img class="accordion__img" src="4.jpg" alt="Image 3"> -->
+            </li>
+            <li class="accordion__li">
+                <span class="accordion__img"></span>
+                <h4 class="word">特色客栈</h4>
+                <!-- <img class="accordion__img" src="5.jpg" alt="Image 3"> -->
+            </li>
+            <li class="accordion__li">
+                <span class="accordion__img"></span>
+                <h4 class="word">海岛酒店</h4>
+                <!-- <img class="accordion__img" src="6.jpg" alt="Image 3"> -->
+            </li>
+            <li class="accordion__li">
+                <span class="accordion__img"></span>
+                <h4 class="word">海外温泉</h4>
+                <!-- <img class="accordion__img" src="7.jpg" alt="Image 3"> -->
+            </li>
+
+        </ul>
+    </div>
+</div>
+<!-- 插件结构引入结束 -->
+<!--<script>-->
+<!--//    自定义手风琴逻辑-->
+<!--//    $(function () {-->
+<!--//        var $li = $("#piano>li");-->
+<!--//-->
+<!--//        $li.mouseover(function () {-->
+<!--//            $(this).animate({"width": "400px"}, 200).siblings("li").animate({"width": "134px"}, 200);-->
+<!--//        });-->
+<!--//        $li.mouseleave(function () {-->
+<!--//            // $li.stop(true,true);-->
+<!--//            // $li.stop(true,false);-->
+<!--//        })-->
+<!--//        $("#piano").mouseleave(function () {-->
+<!--//            $("#piano li").animate({"width": 172 + "px"}, 200);-->
+<!--//        })-->
+<!--//    })-->
+<!--</script>-->
+<!--手风琴结束-->
+<!--商品页开始-->
+<div class="contents">
+    <div class="content box">
+        <div class="subtitle box">
+            <h2>
+                <a href="#" class="fl mr10">目的地指数</a>
+                <span>覆盖全球50万家酒店，你想住的，我们都有</span>
+            </h2>
+        </div>
+        <!--国内版块开始-->
+        <div class="content-t box" id="content-top">
+            <h3 class="clearfix">
+                <a class="more fr" href="#">更多&gt;&gt;</a>
+                <a href="#" class="fl pr20 cuntry"><i class="inner"></i>国内</a>
+                <span class="current">登高踏青</span>
+                <span>小憩温泉</span>
+                <span>天然氧吧</span>
+                <span>草原撒欢</span>
+                <span>小镇时光</span>
+                <span>美食之城</span>
+
+            </h3>
+            <ul>
+                <li>
+                    <div class="mask">
+                        <a href="#">
+                            <img src="images/dgtq-hs.jpg" alt=""/><span>黄山</span>
+                        </a>
+                    </div>
+                    <p>春意撩人 登高踏青赏春色</p>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/dgtq-ems.jpg" alt=""/><span>峨眉山</span>
+                    </a>
+
+                    <p>阳春三月 闻着茶香去峨眉</p>
+                </li>
+                <li>
+                    <div class="mask">
+                        <a href="#">
+                            <img src="images/dgtq-wts.jpg" alt=""/>
+                        </a>
+                        <span>五台山</span>
+                    </div>
+                    <p>迎春 祈福 登五台</p>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/dgtq-ls.jpg" alt=""/><span>庐山</span>
+                    </a>
+
+                    <p>亲近自然 春游庐山</p>
+                </li>
+            </ul>
+        </div>
+        <!--国内版块结束-->
+        <!--国外版块开始-->
+        <div class="content-t box" id="content-bot">
+            <h3 class="clearfix">
+                <a class="more fr" href="#">更多&gt;&gt;</a>
+                <a href="#" class="fl pr20 cuntry"><i class="outer"></i>海外</a>
+                <span class="current">文艺清新</span>
+                <span>面朝大海</span>
+                <span>别样建筑</span>
+                <span>浪漫主义</span>
+                <span>魅力都市</span>
+                <!--<span>美食之城</span>-->
+            </h3>
+            <ul>
+                <li>
+                    <div class="mask">
+                        <a href="#">
+                            <img src="images/termini_it1_ld.jpg" alt=""/><span>伦敦</span>
+                        </a>
+                    </div>
+                    <p>风情英伦，帝国余韵</p>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/termini_it1_qm.jpg" alt=""/><span>清迈</span>
+                    </a>
+
+                    <p>泰北玫瑰，慢行古城</p>
+                </li>
+                <li>
+                    <div class="mask">
+                        <a href="#">
+                            <img src="images/termini_it1_jzd.jpg" alt=""/>
+                        </a>
+                        <span>济州岛</span>
+                    </div>
+                    <p>最传统的浪漫，最神秘的自然</p>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/termini_it1_lm.jpg" alt=""/><span>罗马</span>
+                    </a>
+
+                    <p>永恒之城，魅力无限</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!--国外版块结束-->
+<!--商品页结束-->
+<!--特价机票开始-->
+<div class="flight-containner mt20">
+    <div class="flight box">
+        <div class="flight-title">
+            <h2>
+                <a href="#">超值特价票</a>
+            </h2>
+        </div>
+        <div class="flight-top mt10 clearfix">
+            <h3 class="clearfix">
+                <a href="#" class="fr more-o">更多&gt;&gt;</a>
+                <a href="#" class="piao fl"><i></i>机票</a>
+                <span class="current">北京出发</span>
+                <span>上海出发</span>
+                <span>广州出发</span>
+                <span>杭州出发</span>
+                <span>深圳出发</span>
+                <span>成都出发</span>
+            </h3>
+
+            <div class="content-t">
+                <ul>
+                    <li><a href="#"><span class="city">北京<i class="left"></i>青岛</span><span class="date">10月01日<i
+                            class="zhe">1.5折</i><span class="price">¥360</span></span></a></li>
+                    <li><a href="#"><span class="city">北京<i class="left"></i>南京</span><span class="date">10月01日<i
+                            class="zhe">1.5折</i><span class="price">¥360</span></span></a></li>
+                    <li><a href="#"><span class="city">北京<i class="left"></i>合肥</span><span class="date">10月01日<i
+                            class="zhe">1.5折</i><span class="price">¥360</span></span></a></li>
+                    <li><a href="#"><span class="city">北京<i class="left"></i>西安</span><span class="date">10月01日<i
+                            class="zhe">1.5折</i><span class="price">¥360</span></span></a></li>
+                    <li><a href="#"><span class="city">北京<i class="left"></i>武汉</span><span class="date">10月01日<i
+                            class="zhe">1.5折</i><span class="price">¥360</span></span></a></li>
+                    <li><a href="#"><span class="city">北京<i class="left"></i>太原</span><span class="date">10月01日<i
+                            class="zhe">1.5折</i><span class="price">¥360</span></span></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="flight-top mt10 flight-bot clearfix">
+            <h3 class="clearfix">
+                <a href="#" class="fr more-o">更多&gt;&gt;</a>
+                <a href="#" class="piao fl"><i></i>火车票</a>
+                <span class="current">北京出发</span>
+                <span>上海出发</span>
+                <span>广州出发</span>
+                <span>深圳出发</span>
+                <span>天津出发</span>
+                <span>厦门出发</span>
+            </h3>
+
+            <div class="content-t">
+                <ul>
+                    <li><a href="#"><span class="city">北京<i class="left"></i>上海</span><span class="date">10月01日<i
+                            class="zhe"></i><span class="price">¥158</span></span></a></li>
+                    <li><a href="#"><span class="city">北京<i class="left"></i>太原</span><span class="date">10月01日<i
+                            class="zhe"></i><span class="price">¥158</span></span></a></li>
+                    <li><a href="#"><span class="city">北京<i class="left"></i>西安</span><span class="date">10月01日<i
+                            class="zhe"></i><span class="price">¥158</span></span></a></li>
+                    <li><a href="#"><span class="city">北京<i class="left"></i>合肥</span><span class="date">10月01日<i
+                            class="zhe"></i><span class="price">¥158</span></span></a></li>
+                    <li><a href="#"><span class="city">北京<i class="left"></i>杭州</span><span class="date">10月01日<i
+                            class="zhe"></i><span class="price">¥158</span></span></a></li>
+                    <li><a href="#"><span class="city">北京<i class="left"></i>郑州</span><span class="date">10月01日<i
+                            class="zhe"></i><span class="price">¥158</span></span></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!--特价机票结束-->
+<!--旅游指南开始-->
+<div class="travelGuide mt20">
+    <div class="guide box">
+        <div class="title">
+            <h2><a href="#">旅游指南</a></h2>
+        </div>
+        <div class="tra-content pt10 clearfix">
+            <div class="tab-pic fl clearfix" id="tab-pic">
+                <ul class="but fl">
+                    <li class="current"><a href="#"><i></i>互联网+旅游 问道青城山</a></li>
+                    <li><a href="#"><i></i>青春520 从三亚文艺客栈开始</a></li>
+                    <li><a href="#"><i></i>厦门中山路上的闽南风情</a></li>
+                    <li><a href="#"><i></i>敦煌，去莫高窟看飞天舞</a></li>
+                </ul>
+                <ul class="pic fr">
+                    <li class="current"><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                </ul>
+            </div>
+            <div class="picRight fr clearfix">
+                <ul>
+                    <li class="left fl"><a href="#"></a>
+
+                        <p>邂逅丽江的悠闲慢时光</p></li>
+                    <li class="right fr"><a href="#"></a>
+
+                        <p>跟着文艺小HI疯玩福建</p></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!--旅游指南结束-->
+<!--服务和邮箱模块开始-->
+<div class="service-imail mt20">
+    <div class="serv-im box">
+        <div class="service">
+            <ul>
+                <li><i></i>全球50万家酒店</li>
+                <li><i></i>订酒店返现金高达20%</li>
+                <li><i></i>国际酒店8折起</li>
+                <li><i></i>7×24小时服务</li>
+            </ul>
+        </div>
+        <div class="mail">
+            <span>亲，留下您的邮箱，会有惊喜呦~</span><input type="text" placeholder="请输入您的E-mail" class="txt"/><input type="button"
+                                                                                                         value="立即订阅"
+                                                                                                         class="btn"/>
+
+            <div class="left"></div>
+            <div class="right"><a href="#">艺龙服务协议</a></div>
+        </div>
+    </div>
+</div>
+<!--服务和邮箱模块结束-->
+<!--尾部开始-->
+<div class="footer mt20 pt20 pb20">
+    <div class="footer-info clearfix">
+        <dl>
+            <dt>加盟合作</dt>
+            <dd><a href="#">酒店加盟</a></dd>
+            <dd><a href="#">分销联盟</a></dd>
+            <dd><a href="#">代理合作</a></dd>
+            <dd><a href="#">广告服务</a></dd>
+            <dd><a href="#">商家中心</a></dd>
+        </dl>
+        <dl>
+            <dt>关于艺龙</dt>
+            <dd><a href="#">关于艺龙</a></dd>
+            <dd><a href="#">酒店大全</a></dd>
+            <dd><a href="#">国际酒店</a></dd>
+            <dd><a href="#">招聘信息</a></dd>
+            <dd><a href="#">校园招聘</a></dd>
+            <dd><a href="#">联系我们</a></dd>
+        </dl>
+        <dl>
+            <dt class="clearfix">艺龙APP下载</dt>
+            <dd class="app"></dd>
+        </dl>
+        <dl>
+            <dt class="clearfix">艺龙官方微信</dt>
+            <dd class="wei"></dd>
+        </dl>
+    </div>
+    <div class="footer_copy">
+        © 1999 - 2015 eLong, Inc or its affiliates. All Rights Reserved.
+        <a href="#"> 京ICP证010011号</a>
+        京公网安备
+        <a href="#">11010502026059号</a>
+        <i></i>
+    </div>
+    <div class="footer_safe">
+        <a href="#"></a><a href="#"></a><a href="#"></a><a href="#"></a><a href="#"></a>
+    </div>
+</div>
+<!--尾部结束-->
+<!--底部开始-->
+<div class="bottom_nav clearfix">
+    <ul>
+        <li class="action"><a href="#">酒店预订</a></li>
+        <li><a href="#">机票查询</a></li>
+        <li><a href="#">酒店团购</a></li>
+        <li><a href="#">热门城市</a></li>
+        <li><a href="#">合作伙伴</a></li>
+        <li><a href="#">常见酒店</a></li>
+    </ul>
+</div>
+<!--底部结束-->
+</body>
+</html>
