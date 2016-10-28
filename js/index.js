@@ -71,7 +71,7 @@ $(function(){
                 $(".phone-ban .siyuan-slide ul").css("left", 0);
                 count1 = 0;
             }
-        }, 2000)
+        }, 3000)
 
     });
     //鼠标离开事件
